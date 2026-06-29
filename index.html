@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPortal - Inovação e Cibersegurança</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <h1>TechPortal</h1>
+            <p>Explorando as fronteiras da inovação, ciência e o futuro digital.</p>
+        </div>
+    </header>
+
+    <main class="main-container">
+        
+        <article class="tech-card main-post">
+            <h2>A Evolução dos Sistemas Digitais e a Nova Era da Computação</h2>
+            <p class="post-meta">Publicado por Especialista Front-End // Engenharia de Software</p>
+            <p>O tecido do ecossistema digital está se transformando a uma velocidade sem precedentes. A convergência entre infraestruturas em nuvem hiperdimensionadas, novos paradigmas de processamento e a necessidade de segurança em tempo real exige uma reconfiguração completa de como construímos, consumimos e protegemos softwares globais. Deixamos de ser apenas usuários de sistemas isolados para nos tornarmos integradores de malhas cognitivas e fluxos de dados distribuídos.</p>
+            
+            <div class="interaction-bar">
+                <button id="like-btn" class="btn btn-primary">👍 Curtir Artigo (<span id="like-count">0</span>)</button>
+                <button id="share-btn" class="btn btn-secondary">🔗 Compartilhar Link</button>
+            </div>
+        </article>
+
+        <section class="tech-card info-hub">
+            <h2>Hub de Conhecimento Técnico</h2>
+            <p class="section-intro">Uma imersão profunda nos pilares tecnológicos que estão definindo a computação moderna.</p>
+            
+            <div class="topic-block">
+                <h3>1. Como funciona a Inteligência Artificial (IA)</h3>
+                <p>As arquiteturas modernas de Inteligência Artificial operam baseadas no conceito de redes neurais artificiais profundas (Deep Learning), estruturadas em camadas matemáticas de neurônios digitais. O processo se dá através da ingestão massiva de dados, onde a rede ajusta seus "pesos" e "vieses" por meio de retropropagação (backpropagation). Isso permite que o sistema identifique padrões estatísticos altamente complexos, realize previsões, automatize decisões e gere novas informações de maneira autônoma, simulando as capacidades cognitivas de reconhecimento humano.</p>
+            </div>
+
+            <div class="topic-block">
+                <h3>2. O que é Computação Quântica</h3>
+                <p>Diferente da computação clássica fundamentada em bits binários (que assumem estritamente os estados de 0 ou 1), a computação quântica utiliza **qubits** (bits quânticos). Graças aos princípios físicos da mecânica quântica, como a **superposição** (um qubit existindo simultaneamente em múltiplos estados) e o **emaranhamento** (interdependência instantânea entre partículas), esses sistemas conseguem processar volumes exponenciais de possibilidades ao mesmo tempo. Na prática, essa tecnologia redefine a criptografia, tornando obsoletos os algoritmos atuais de chave pública (como RSA) e acelerando descobertas moleculares complexas.</p>
+            </div>
+        </section>
+
+        <section class="tech-card cybersecurity-guide">
+            <h2>Guia de Cibersegurança Prática</h2>
+            <p>O aumento da complexidade tecnológica expande diretamente a superfície de ataques cibernéticos. Proteger sua identidade e ativos digitais exige a implementação de posturas defensivas rígidas:</p>
+            
+            <ul class="styled-list">
+                <li>
+                    <strong>Autenticação de Dois Fatores (2FA):</strong> Adiciona uma camada de proteção indispensável além da senha tradicional. Ao exigir um token dinâmico gerado via hardware ou aplicativo dedicado (como Google Authenticator), mitiga ataques de força bruta e roubo de credenciais.
+                </li>
+                <li>
+                    <strong>Gerenciadores de Senhas Complexas:</strong> A reutilização de senhas é uma das maiores vulnerabilidades atuais. O uso de cofres criptografados locais ou em nuvem segura permite gerar e armazenar credenciais aleatórias exclusivas para cada serviço, baseadas em algoritmos robustos (AES-256).
+                </li>
+                <li>
+                    <strong>Verificação de Protocolos Seguros (HTTPS):</strong> Garanta que toda navegação utilize criptografia em trânsito TLS/SSL. O protocolo HTTPS protege o fluxo de dados contra interceptações do tipo <em>Man-in-the-Middle</em> (MitM), criptografando a comunicação entre o seu navegador e o servidor de destino.
+                </li>
+                <li>
+                    <strong>Atualizações Constantes de Firmware e Software:</strong> Vulnerabilidades de "Dia Zero" (0-day) são ativamente exploradas por atacantes. Manter o sistema operacional, navegadores e roteadores atualizados garante a aplicação imediata de patches de segurança desenvolvidos pelos fabricantes.
+                </li>
+            </ul>
+        </section>
+
+        <section class="tech-card interactive-section">
+            <h2>Assistente Virtual Omni_IA</h2>
+            <p class="instruction">Consulte nossa base interna de dados. Tente digitar termos como: <strong>'ia'</strong>, <strong>'computação quântica'</strong> ou <strong>'biohacking'</strong>.</p>
+            <div class="search-group">
+                <input type="text" id="user-question" placeholder="Escreva sua consulta técnica aqui...">
+                <button id="ask-btn" class="btn btn-primary">Consultar</button>
+            </div>
+            <div id="answer-space" class="terminal-box" style="display: none;"></div>
+        </section>
+
+        <section class="tech-card interactive-section game-card">
+            <h2>Desafio Tecnológico: Hack the System</h2>
+            <p id="game-hint">DIRETRIZ: Decodifique o protocolo padrão de criptografia segura para web (5 letras):</p>
+            <div class="search-group">
+                <input type="text" id="guess-input" placeholder="Insira o código de bypass...">
+                <button id="game-btn" class="btn btn-accent">Injetar Resposta</button>
+            </div>
+            <p id="game-message" class="game-feedback"></p>
+        </section>
+    </main>
+
+    <div id="support-interface">
+        <button id="help-btn" class="help-trigger" title="Painel de Suporte e Dicas">❓</button>
+        <div id="help-panel" class="help-sidebar" style="display: none;">
+            <h3>Suporte Operacional</h3>
+            <p>Bem-vindo ao centro de ajuda lateral. Aqui estão suas diretrizes de navegação:</p>
+            <ul>
+                <li><strong>Leitura:</strong> Explore o Hub Técnico e o Guia de Cibersegurança para aprender boas práticas defensivas.</li>
+                <li><strong>Omni_IA:</strong> Use termos em minúsculo na barra de pesquisa para obter retornos rápidos do terminal.</li>
+                <li><strong>Desafio:</strong> Travou em alguma pergunta do mini-game? Use o botão abaixo para extrair informações privilegiadas do sistema.</li>
+            </ul>
+            <button id="cheat-btn" class="btn btn-secondary btn-sm">Revelar Dica do Desafio</button>
+        </div>
+    </div>
+
+    <div id="feedback-widget" class="feedback-container">
+        <button id="widget-toggle" class="widget-bubble" title="Avaliar o Portal">⭐</button>
+        <div id="widget-content" class="widget-box" style="display: none;">
+            <h4>Avalie sua Experiência</h4>
+            <div id="stars-container" class="star-rating">
+                <span data-value="1">★</span>
+                <span data-value="2">★</span>
+                <span data-value="3">★</span>
+                <span data-value="4">★</span>
+                <span data-value="5">★</span>
+            </div>
+            <textarea id="widget-comment" placeholder="Deixe seu relatório ou sugestão de melhoria técnica..."></textarea>
+            <button id="widget-send-btn" class="btn btn-primary btn-full">Enviar Relatório</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
